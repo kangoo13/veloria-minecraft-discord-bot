@@ -81,8 +81,7 @@ Suggestion_Embed_Footer: "Utilisez la commande suggest pour suggérer une idée 
 ####################################
 #  ADVERTISEMENT SYSTEM MESSAGES   #
 ####################################
-Advertisement_Message: "La publicité n'est pas autorisée
-."
+Advertisement_Message: "La publicité n'est pas autorisée."
 # This is the message sent when a user tries to advertise/sends a non whitelisted link.
 
 ####################################

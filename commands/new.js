@@ -42,8 +42,8 @@ module.exports.run = async (bot, message, args) => {
         let embed2 = new Discord.RichEmbed()
             .setColor("#098aed")
             .setAuthor("Ticket bot")
-            .setDescription(`${config.New_Ticket_Embed_Description.replace(/{user}/g, `${message.member}`)}\n\n**Reason:** ${args.join(" ")}`)
-            .setFooter(config.New_Ticket_Embed_Footer)
+            .setDescription(`${config.Ticket_Embed_Description.replace(/{user}/g, `${message.member}`)}\n\n**Reason:** ${args.join(" ")}`)
+            .setFooter(config.Ticket_Embed_Footer)
             .setThumbnail(bot.user.avatarURL);
         let role2 = message.guild.roles.find(r => r.name.toLowerCase() == config.Ticket_Support_Role.toLowerCase());
         if (role2)
