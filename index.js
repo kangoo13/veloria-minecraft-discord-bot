@@ -455,8 +455,8 @@ require("child_process").exec("npm install", async function (err, stdout) {
                     .setTitle("Mauvais channel!")
                     .setDescription("Vous ne pouvez utiliser des commandes que dans le channel " + message.guild.channels.find(c => c.name.toLowerCase() === config.Commands_Channel.toLowerCase()) + "!");
                 await message.delete(2500);
-                message.channel.send(`<@${message.author.id}>`).then(msg => msg.delete(2500));
-                return message.channel.send(embed).then(msg => msg.delete(2500));
+                message.channel.send(`<@${message.author.id}>`).then(msg => msg.delete(5000));
+                return message.channel.send(embed).then(msg => msg.delete(5000));
             }
 
             const args = message.content.split(" ");
