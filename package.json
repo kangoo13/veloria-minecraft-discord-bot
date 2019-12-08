@@ -9,12 +9,18 @@
   "author": "Kangoo13",
   "license": "MIT",
   "dependencies": {
+    "@discordjs/uws": "^10.149.0",
+    "bufferutil": "^4.0.1",
     "discord.js": "^11.5.1",
+    "erlpack": "github:discordapp/erlpack",
+    "libsodium-wrappers": "^0.7.6",
     "ms": "^2.1.2",
+    "node-opus": "^0.2.9",
+    "opusscript": "0.0.6",
     "request": "^2.88.0",
-    "request-promise": "^4.2.4",
-    "sqlite3": "^4.0.6",
+    "request-promise": "^4.2.5",
+    "sqlite3": "^4.1.1",
     "unzip": "^0.1.11",
-    "yaml": "^1.6.0"
+    "yaml": "^1.7.2"
   }
 }
