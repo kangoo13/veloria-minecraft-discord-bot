@@ -5,15 +5,15 @@ module.exports.run = async (bot, message, args) => {
     const config = await yml("./config.yml");
 
     message.delete();
-    let role = message.guild.roles.find("name", `${config.Announce_Command}`);
+    let role = message.guild.roles.find("name", `${config.Announce_Required_Rank}`);
     let arguments = args.join(" ");
-    let channel = message.guild.channels.find(`name`, `${config.Announcements_Channel}`);
+    let channel = message.guild.channels.find(`name`, `${config.Announcement_Channel}`);
 
-    if (!role) return console.log(`ERROR! The ${config.Announce_Command} role was not found, please create it.`);
+    if (!role) return console.log(`ERROR! The ${config.Announce_Required_Rank} role was not found, please create it.`);
     if (!args[0]) return message.reply(`Usage: -announce (announcement)`).then(msg => {
         msg.delete(2000)
     });
-    if (!channel) return console.log(`ERROR! The ${config.Announcements_Channel} channel was not found, please create it.`);
+    if (!channel) return console.log(`ERROR! The ${config.Announcement_Channel} channel was not found, please create it.`);
     if (!message.member.roles.has(role.id)) return message.reply(`${config.No_Permission}`).then(msg => {
         msg.delete(2000)
     });
