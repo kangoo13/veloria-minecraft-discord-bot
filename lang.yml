@@ -81,8 +81,7 @@ Suggestion_Embed_Footer: "Utilisez la commande suggest pour suggérer une idée 
 ####################################
 #  ADVERTISEMENT SYSTEM MESSAGES   #
 ####################################
-Advertisement_Message: "La publicité n'est pas autorisée
-."
+Advertisement_Message: "La publicité n'est pas autorisée."
 # This is the message sent when a user tries to advertise/sends a non whitelisted link.
 
 ####################################
@@ -94,7 +93,7 @@ Filter_Message: "Désolé, vous ne pouvez pas dire ça."
 ####################################
 #     GIVEAWAYS SYSTEM MESSAGES    #
 ####################################
-Max_Giveaways_Reached_Message: "Il y a un maximum de 5 cadeaux!"
+Max_Giveaways_Reached_Message: "Il y a un maximum de 5 giveways!"
 # This is the message sent when you've reached the maximum amount of giveaways.
 
 ####################################
@@ -102,19 +101,19 @@ Max_Giveaways_Reached_Message: "Il y a un maximum de 5 cadeaux!"
 ####################################
 Tempmute_Invalid_Mute_Time: "Veuillez ajouter une durée de mute valide. Exemples"
 # This is the message sent when a user does not provide a valid mute length
-Tempmute_Muted: "{user} a été temporairement mute pour {length} et {reason}"
+Tempmute_Muted: "{user} a été temporairement mute pour {length} secondes {reason}"
 # VARIABLES: {user}, {length}, and {reason}
-Temp_Mute_Un_Muted: "{user} est maintenant mute."
+Temp_Mute_Un_Muted: "{user} est maintenant démute."
 # VARIABLES: {user}
 
 ####################################
 #      SLOTS COMMAND MESSAGES      #
 ####################################
-Gamble_No_Amount: "Veuillez fournir une quantité de pièces suffisantes pour jouer !"
+Gamble_No_Amount: "Veuillez fournir une quantité de pièces pour jouer !"
 # This is the message sent when a user does not provide an amount of coins to gamble.
-Gamble_Invalid_Amount: "Ce n'est pas un entier valide!"
+Gamble_Invalid_Amount: "Ce n'est pas un nombre valide!"
 # This is the message sent when the user does use a valid amount.
-Gamble_Atleast_10: "Vous devez jouer au moins 10 pièces!"
+Gamble_Atleast_10: "Vous devez parier au moins 10 pièces!"
 # This is the message sent when a user tries to gambles less than 10 coins
 Gamble_Not_Enough_Coins: "Vous n'avez pas assez de pièces! Vous avez seulement {pièces} pièces!"
 # This is the message sent when you do nott have the needed coins to gamble the amount you want to.
@@ -123,7 +122,7 @@ Gamble_Not_Enough_Coins: "Vous n'avez pas assez de pièces! Vous avez seulement 
 #      TICKET SYSTEM MESSAGES      #
 ####################################
 
-Not_In_Ticket: "Cette commande doit être exécutée dans un canal de ticket!"
+Not_In_Ticket: "Cette commande doit être exécutée dans un channel de ticket!"
 # This is the message sent when a user runs a ticket only command outside of a tiket channel.
 
 ####################################
