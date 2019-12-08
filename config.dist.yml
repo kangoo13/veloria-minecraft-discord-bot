@@ -256,7 +256,7 @@ User_Ticket_Limit: 5
 # This is the limit of tickets a certain user can have open at one time.
 Ticket_Require_Reason: "false"
 # If set to true, users will be required to add a reason when opening a ticket.
-Ticket_Support_Role: "Support Team"
+Ticket_Support_Role: "Staff"
 # This is the role required to see the tickets, run the add, remove, and close command.
 Close_All_Role: "Admin"
 # This is the role required to close all tickets at once.

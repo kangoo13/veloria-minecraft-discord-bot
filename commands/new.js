@@ -37,7 +37,7 @@ module.exports.run = async (bot, message, args) => {
         });
         let embed = new Discord.RichEmbed()
             .setColor("#098aed")
-            .setDescription(`Votre nouveau ticket a été crée sur ${ch}!`);
+            .setDescription(`Votre nouveau ticket a été créé sur ${ch}!`);
         message.channel.send(embed);
         let embed2 = new Discord.RichEmbed()
             .setColor("#098aed")
@@ -72,9 +72,11 @@ module.exports.run = async (bot, message, args) => {
             channel.send(embed);
         }
         tickets[0].currentTicket++;
-        fs.writeFile("./tickets.json", JSON.stringify(tickets), (err) => {
-            if (err) console.log(err)
-        })
+        fs.writeFile("./data/tickets.json", JSON.stringify(tickets), (err) => {
+            if (err) {
+                console.log(err)
+            }
+        });
     })
 };
 

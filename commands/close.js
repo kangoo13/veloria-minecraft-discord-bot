@@ -34,7 +34,7 @@ module.exports.run = async (bot, message, args) => {
         await message.member.removeRole(role2.id);
         await role2.delete();
     }
-    fs.writeFile("./tickets.json", JSON.stringify(tickets), (err) => {
+    fs.writeFile("./data/tickets.json", JSON.stringify(tickets), (err) => {
         if (err) console.log(err)
     })
 };
