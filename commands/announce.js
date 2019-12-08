@@ -23,34 +23,34 @@ module.exports.run = async (bot, message, args) => {
 
     let all = new Discord.RichEmbed()
         .setColor(config.Color)
-        .setAuthor(config.AnnouncementEmbed_Title)
+        .setAuthor(config.Announcement_Embed_Title)
         .setThumbnail(bot.user.displayAvatarURL)
         .setDescription(args.join(" "))
         .setFooter(config.AnnounceEmbed_Footer)
 
     let none = new Discord.RichEmbed()
         .setColor(config.Color)
-        .setAuthor(config.AnnouncementEmbed_Title)
+        .setAuthor(config.Announcement_Embed_Title)
         .setDescription(args.join(" "))
 
     let nopicture = new Discord.RichEmbed()
         .setColor(config.Color)
-        .setAuthor(config.AnnouncementEmbed_Title)
+        .setAuthor(config.Announcement_Embed_Title)
         .setDescription(args.join(" "))
         .setFooter(config.AnnounceEmbed_Footer)
 
     let nofooter = new Discord.RichEmbed()
         .setColor(config.Color)
-        .setAuthor(config.AnnouncementEmbed_Title)
+        .setAuthor(config.Announcement_Embed_Title)
         .setThumbnail(bot.user.displayAvatarURL)
         .setDescription(args.join(" "))
 
-    if (config.AnnouncementEmbed_Picture === "true" && config.AnnouncementEmbed_Footer === "true") return channel.send(all).then(channel.send(`@everyone`))
-    if (config.AnnouncementEmbed_Picture === "false" && config.AnnouncementEmbed_Footer === "false") return channel.send(none).then(channel.send(`@everyone`))
-    if (config.AnnouncementEmbed_Footer === "false" && config.AnnouncementEmbed_Picture === "true") return channel.send(nofooter).then(channel.send(`@everyone`))
-    if (config.AnnouncementEmbed_Footer === "true" && config.AnnouncementEmbed_Picture === "false") return channel.send(nopicture).then(channel.send(`@everyone`))
-    if (config.AnnouncementEmbed_Picture !== "true" && config.AnnouncementEmbed_Picture !== "false") return console.log(`Please set the option "AnnouncementEmbed_Picture" to either **true** or **false** config.yml.`);
-    if (config.AnnouncementEmbed_Footer !== "true" && config.AnnouncementEmbed_Picture !== "false") return console.log(`Please set the option "AnnouncementEmbed_Footer" to either **true** or **false** in your config.yml.`);
+    if (config.Announcement_Embed_Picture === "true" && config.Announcement_Embed_Footer === "true") return channel.send(all).then(channel.send(`@everyone`))
+    if (config.Announcement_Embed_Picture === "false" && config.Announcement_Embed_Footer === "false") return channel.send(none).then(channel.send(`@everyone`))
+    if (config.Announcement_Embed_Footer === "false" && config.Announcement_Embed_Picture === "true") return channel.send(nofooter).then(channel.send(`@everyone`))
+    if (config.Announcement_Embed_Footer === "true" && config.Announcement_Embed_Picture === "false") return channel.send(nopicture).then(channel.send(`@everyone`))
+    if (config.Announcement_Embed_Picture !== "true" && config.Announcement_Embed_Picture !== "false") return console.log(`Please set the option "Announcement_Embed_Picture" to either **true** or **false** config.yml.`);
+    if (config.Announcement_Embed_Footer !== "true" && config.Announcement_Embed_Picture !== "false") return console.log(`Please set the option "Announcement_Embed_Footer" to either **true** or **false** in your config.yml.`);
 }
 
 module.exports.help = {
