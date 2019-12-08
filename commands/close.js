@@ -18,7 +18,7 @@ module.exports.run = async (bot, message, args) => {
     if (!find) return message.reply("``ERREUR !`` Je ne peux pas trouver ce ticket dans la base de donnée !");
     tickets.splice(tickets.indexOf(find), 1);
     await message.channel.delete();
-    let channel = message.guild.channels.find(ch => ch.name.toLowerCase() == "ticket-log");
+    let channel = message.guild.channels.find(ch => ch.name.toLowerCase() === config.Ticket_Logs_Channel);
     let user = message.guild.member(find.authorID);
     if (channel) {
         let embed = new Discord.RichEmbed()
