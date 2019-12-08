@@ -14,7 +14,7 @@ Insufficient_Permission_Message: "Vous n'avez pas la permission d'utiliser cette
 ####################################
 #    SUGGESTION COMMAND MESSAGES   #
 ####################################
-Announcement_Sent: "✅ {user} Ton annonce a bien etait envoyé !"
+Announcement_Sent: "✅ {user} Ton annonce a bien été envoyé !"
 # This is the message sent when a user successfully sends an announcement.
 
 ####################################
@@ -26,7 +26,7 @@ No_Reason: "Veuillez fournir une raison valide"
 # This is the message sent when a user does not add a reason to their punishment.
 User_Is_Staff: "Vous ne pouvez pas punir un membre du Staff."
 # This is the message sent when a user tries to punish a staff member.
-User_Is_VeloriaBot: "Comment essayez vous de me ban. Faire ceci n'est pas approuvé !"
+User_Is_VeloriaBot: "NOPE, impossible de me ban haha ( même mes créateurs n'y arrivent pas) !"
 # This is the message sent when a user tries to ban VeloriaBot.
 User_Is_Yourself: "Vous ne pouvez pas vous punir vous même."
 # This is the message sent when a user tries to punish themselves.
@@ -42,7 +42,7 @@ No_Message_To_Say: "Merci de fournir le text à dire pour le bot!"
 ####################################
 No_Amount_Of_Messages_To_Clear: "Veuillez indiquer le nombre de messages à supprimer. "
 # This is the message sent when the user does not add the amount of messages to clear.
-Cleared: "Supprimation de **{amount}** messages."
+Cleared: "Suppression de **{amount}** messages."
 # This is the message sent when you clear some messages.
 
 ####################################
@@ -58,8 +58,7 @@ Bug_Reported_Reply_Message: "Merci d'avoir signalé le bug!"
 ####################################
 Invalid_Item: "Ce n'est pas un item valide."
 # This is the message sent when a user tries to buy an item that does not exist.
-Not_Enough_Coins: "Vous n'avez pas assez de pièces pour cet objet
-!"
+Not_Enough_Coins: "Vous n'avez pas assez de pièces pour cet objet!"
 # This is the message sent when a user tries to buy something they can not afford.
 Purchase_Success: "Vous avez acheté avec succès {item} pour {price} pièce(s)."
 # This is the message sent when you purchae an item from the shop.
@@ -69,11 +68,9 @@ Already_Bought: "Vous avez déja acheté cette item."
 ####################################
 #    SUGGESTION COMMAND MESSAGES   #
 ####################################
-No_Suggestion_Found: "Veuillez nous informer de la suggestion
-."
+No_Suggestion_Found: "Veuillez nous informer de la suggestion."
 # This is the message sent when a user does not add their idea.
-Suggestion_Made_Reply_Message: "Votre suggestion a été ajoutée
-!"
+Suggestion_Made_Reply_Message: "Votre suggestion a été ajoutée!"
 # This is the message sent once a suggestion is successfully sent in.
 Suggestion_Cooldown_Message: "Veuillez patienter 15 minutes avant d'ajouter une autre suggestion!"
 # This is the message sent when a user is still on the suggestions cooldown.
@@ -151,28 +148,28 @@ Help_Command:
       description: "View this message"
     bugreport:
       usage: "-bugreport"
-      description: "Signalez un bug trouvé sur le serveur!"
+      description: "Signaler un bug trouvé sur le serveur!"
     coins:
       usage: "-piece"
-      description: "Vérifiez combien de pièces vous avez!"
+      description: "Vérifier combien de pièces vous avez!"
     ip:
       usage: "-ip"
-      description: "Obtenez l'IP du serveur!"
+      description: "Obtener l'IP du serveur!"
     level:
       usage: "-niveau"
-      description: "Vérifiez votre niveau actuel sur le serveur Discord!"
+      description: "Vérifier votre niveau actuel sur le serveur Discord!"
     links:
       usage: "-liens"
-      description: "Obtenez des liens importants liés au serveur!"
+      description: "Obtenir des liens importants liés au serveur!"
     suggest:
       usage: "-suggestion"
-      description: "Suggérer quelque chose pour le serveur!"
+      description: " Faire une suggestion pour le serveur!"
     new:
       usage: "-new"
-      description: "Créez un ticket."
+      description: "Créer un ticket."
     add:
       usage: "-add"
-      description: "Ajoutez un utilisateur à votre ticket"
+      description: "Ajouter un utilisateur à votre ticket"
     remove:
       usage: "-supp"
       description: "Supprimer un utilisateur de votre ticket"
@@ -181,7 +178,7 @@ Help_Command:
       description: "Signaler un utilisateur pour avoir enfreint une règle"
     close:
       usage: "-close"
-      description: "Close your ticket"
+      description: "Fermer votre ticket"
     shop:
       usage: "-boutique"
       description: "Voir la boutique"
@@ -190,7 +187,7 @@ Help_Command:
       description: "Acheter un article dans la boutique"
     slot:
       usage: "-slot"
-      description: "Jouez vos pièces"
+      description: "Parier vos pièces"
     cointop:
       usage: "-baltop"
       description: "Voir le classement des richesses"
@@ -212,13 +209,13 @@ Help_Command:
       description: "débannir un joueur"
     blacklist:
       usage: "-blacklist"
-      description: "Blacklisté un utilisateur pour l'empecher de parler."
+      description: "Blacklister un utilisateur pour l'empecher de parler."
     clear:
       usage: "-clear"
       description: "Clear un certains nombres de messages!"
     install:
       usage: "-install"
-      description: "Installez tous les canaux nécessaires!"
+      description: "Installer tous les canaux nécessaires!"
     debug:
       usage: "-debug"
       description: "Créer une URL de débogage"
@@ -245,7 +242,7 @@ Help_Command:
       description: "Mettre à jour les joueurs de tout changement en cours."
     vote:
       usage: "-vote"
-      description: "Créez un sondage / vote pour que vos joueurs votent."
+      description: "Créer un sondage / vote pour que vos joueurs votent."
     gcreate:
       usage: "-gcreate"
       description: "Créer des cadeaux"
@@ -254,7 +251,7 @@ Help_Command:
       description: "Supprimer les cadeaux"
     greroll:
       usage: "-greroll"
-      description: "Relancez un cadeau fini"
+      description: "Relancer un cadeau fini"
     filter:
       usage: "-filtre"
       description: "Gérer le filtre de mots"
