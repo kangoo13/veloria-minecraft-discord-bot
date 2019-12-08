@@ -42,8 +42,9 @@ Blacklist_Role: "Blacklisted"
 ### IP Command ###
 Server_IP: "play.veloria.fr"
 # This is the IP that will be shown in the embed when running the ip command.
-IP_Embed_Header: "IP du Serveur"
+IP_Embed_Title: "IP du Serveur"
 # This is the title of the IP embed.
+IP_Embed_Color: "#00FF00"
 
 Chat_Logs_Blacklist:
   - staff

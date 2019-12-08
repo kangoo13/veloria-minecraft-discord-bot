@@ -5,7 +5,7 @@ module.exports.run = async (bot, message, args) => {
     const config = await yml("./config.yml");
 
     let embed = new Discord.RichEmbed()
-        .setColor(`${config.Color}`)
+        .setColor(`${config.IP_Embed_Color}`)
         .setAuthor(`${config.IP_Embed_Title}`)
         .setDescription(`${config.Server_IP}`);
 
