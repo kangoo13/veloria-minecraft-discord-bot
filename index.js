@@ -445,16 +445,16 @@ require("child_process").exec("npm install", async function (err, stdout) {
             if (!message.content.startsWith(prefix)) return;
             // COMMANDS CHANNEL
             if (config.Require_Commands_Channel.toLowerCase() == "true"
-                && message.guild.roles.find(r => r.name.toLowerCase() == config.Bypass_Commands_Channel.toLowerCase())
-                && message.member.roles.sort((a, b) => b.calculatedPosition - a.calculatedPosition).first().calculatedPosition < message.guild.roles.find(r => r.name.toLowerCase() == config.Bypass_Commands_Channel.toLowerCase()).calculatedPosition
-                && message.guild.channels.find(c => c.name.toLowerCase() == config.Commands_Channel.toLowerCase())
+                && message.guild.roles.find(r => r.name.toLowerCase() === config.Bypass_Commands_Channel.toLowerCase())
+                && message.member.roles.sort((a, b) => b.calculatedPosition - a.calculatedPosition).first().calculatedPosition < message.guild.roles.find(r => r.name.toLowerCase() === config.Bypass_Commands_Channel.toLowerCase()).calculatedPosition
+                && message.guild.channels.find(c => c.name.toLowerCase() === config.Commands_Channel.toLowerCase())
                 && message.channel.name.toLowerCase() !== config.Commands_Channel.toLowerCase()
                 && !message.channel.name.startsWith("ticket")) {
                 const embed = new Discord.RichEmbed()
                     .setColor(config.Error_Color)
-                    .setTitle("Wrong channel!")
-                    .setDescription("You can only use commands in " + message.guild.channels.find(c => c.name.toLowerCase() == config.Commands_Channel.toLowerCase()) + "!");
-                message.delete(2500);
+                    .setTitle("Mauvais channel!")
+                    .setDescription("Vous ne pouvez utiliser des commandes que dans le channel " + message.guild.channels.find(c => c.name.toLowerCase() === config.Commands_Channel.toLowerCase()) + "!");
+                await message.delete(2500);
                 message.channel.send(`<@${message.author.id}>`).then(msg => msg.delete(2500));
                 return message.channel.send(embed).then(msg => msg.delete(2500));
             }

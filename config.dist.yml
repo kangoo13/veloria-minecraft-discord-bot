@@ -19,7 +19,7 @@ Ban_Staff: true
 # Should banning staff be allowed? Note: You will only be able to ban staff under you
 
 
-Require_Commands_Channel: "false"
+Require_Commands_Channel: "true"
 # Require Commands to be sent in the bot spam channel
 Commands_Channel: "bot-spam"
 # Bot Commands channel, only needed if Require_Commands_Channel is "true".

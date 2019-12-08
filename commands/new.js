@@ -45,7 +45,7 @@ module.exports.run = async (bot, message, args) => {
             .setDescription(`${config.Ticket_Embed_Description.replace(/{user}/g, `${message.member}`)}\n\n**Raison:** ${args.join(" ")}`)
             .setFooter(config.Ticket_Embed_Footer)
             .setThumbnail(bot.user.avatarURL);
-        let role2 = message.guild.roles.find(r => r.name.toLowerCase() == config.Ticket_Support_Role.toLowerCase());
+        let role2 = message.guild.roles.find(r => r.name.toLowerCase() === config.Ticket_Support_Role.toLowerCase());
         if (role2)
             ch.send(`${role2}`);
         ch.send(embed2);
