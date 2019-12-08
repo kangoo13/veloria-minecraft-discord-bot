@@ -20,7 +20,7 @@ module.exports.run = async (bot, message, args) => {
                 ADD_REACTIONS: true,
                 READ_MESSAGE_HISTORY: true
             });
-        else ch.send("There is no role called ``" + config.Ticket_Support_Role + "`` in this guild, so staff will not have permission to talk in this channel, please contact an administrator!");
+        else ch.send("There is no role called ``" + config.Staff_Role_Name + "`` in this guild, so staff will not have permission to talk in this channel, please contact an administrator!");
         ch.overwritePermissions(message.author.id, {
             VIEW_CHANNEL: true,
             SEND_MESSAGES: true,
@@ -61,13 +61,13 @@ module.exports.run = async (bot, message, args) => {
         }).then(role => {
             message.member.addRole(role.id);
         });
-        let channel = message.guild.channels.find(ch => ch.name === "ticket-log");
+        let channel = message.guild.channels.find(ch => ch.name === config.Ticket_Logs_Channel);
         if (channel) {
             let embed = new Discord.RichEmbed()
                 .setColor("#098aed")
                 .setThumbnail(bot.user.avatarURL)
                 .setFooter("Ticket Log")
-                .setAuthor("Ticket Crée")
+                .setAuthor("Ticket Créé")
                 .setDescription(`**Créateur:** ${message.author} **ayant pour ID:** ${message.author.id}\n**ID Ticket:** ${zeroes}${currentTicket}\n**Nom du Channel:** ${ch.name}`);
             channel.send(embed);
         }

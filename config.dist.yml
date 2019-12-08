@@ -13,13 +13,13 @@ Error_Color: "#f52c2c"
 # This is the HEX color that will be used in all error embeds (Wrong channel, syntax errors, etc.)
 Remove_Command_Messages: "false"
 # If set to true the bot will delete user's messages when they execute a command.
-Staff_Help_Menu: "true"
+Staff_Role_Name: "Staff"
 # This enables or disables the staff help embed. This embed gets sent when you run the -help command.
-Ban_Staff: false
+Ban_Staff: true
 # Should banning staff be allowed? Note: You will only be able to ban staff under you
 
 
-Require_Commands_Channel: "true"
+Require_Commands_Channel: "false"
 # Require Commands to be sent in the bot spam channel
 Commands_Channel: "bot-spam"
 # Bot Commands channel, only needed if Require_Commands_Channel is "true".
@@ -40,9 +40,9 @@ Blacklist_Role: "Blacklisted"
 
 
 ### IP Command ###
-Server_IP: "Play.example.com"
+Server_IP: "play.veloria.fr"
 # This is the IP that will be shown in the embed when running the ip command.
-IP_Embed_Header: "Server IP"
+IP_Embed_Header: "IP du Serveur"
 # This is the title of the IP embed.
 
 Chat_Logs_Blacklist:
@@ -61,7 +61,7 @@ Chat_Logs_Blacklist:
 
 # JOIN EVENT:
 
-Join_Messages: "true"
+Join_Messages: "false"
 # This will enable or disable join messages.
 Join_Role: "Member"
 # This is the role given to users when they join. Put "-NONE" to not give a role on join.
@@ -87,7 +87,7 @@ Join_Embed_Timestamp: "false"
 
 ### INVITE REWARDS SETTINGS ###
 
-Invite_Rewards_System: "true"
+Invite_Rewards_System: "false"
 # This will enable or disable the invite rewards system.
 Invite_Rewards:
   1: "Inviter"
@@ -100,7 +100,7 @@ Invite_Rewards:
 
 // LEAVE EVENT:
 
-Leave_Messages: "true"
+Leave_Messages: "false"
 # This will enable or disable leave messages.
 Leave_Message_Channel: "welcome"
 # This is the channel leave messages will be sent in.
@@ -127,9 +127,9 @@ Leave_Embed_Timestamp: "false"
 #                                      #
 ########################################
 
-Anti_Advertisement_System: "true"
+Anti_Advertisement_System: "false"
 # This will enable or disable the chat anti-advertisement 
-Status_Antiadvertisement_System: "true"
+Status_Antiadvertisement_System: "false"
 # This will enable or disable the status anti-advertisement 
 
 Advertisement_Bypass_Role: "Staff"
@@ -148,7 +148,7 @@ Whitelisted_Websites:
 #                                      #
 ########################################
 
-Coin_System: "true"
+Coin_System: "false"
 # This will enable or disable the coin system.
 Coin_Amount: 10
 # This is the amount of coins users will get per message.
@@ -195,7 +195,7 @@ Coin_Top_Embed_Footer: "Total Coins Collected {totalcoins}"
 # Put "-NONE" to not have a footer in the embed. 
 
 
-Level_System: "true"
+Level_System: "false"
 # This will enable or disable the level system
 Approximate_XP_Per_Message: 10
 # Approximate_XP_Per_Message is that amount + a random number between 1 and 10 (for example, if the value was 50, the xp value would be between 50-60 per message)
@@ -225,7 +225,7 @@ Leveltop_Embed_Footer: "Total XP Collected"
 #                                  #
 ####################################
 
-Giveaway_System: "true"
+Giveaway_System: "false"
 # This will enable or disable the giveaway system
 Emoji: ":tada:"
 # This is Discord's emoji variable for the emoji that you want users to react to in order to enter the giveaway.
@@ -264,7 +264,7 @@ Ticket_Category: "Tickets"
 # This is the category tickets will be put in.
 Ticket_Logs_Channel: "ticket-logs"
 # When a ticket is opened or closed a log message will be sent here.
-Ticket_Topic: "**User** {user} **Reason** {reason} **Time** {time} **ID** {id}"
+Ticket_Topic: "**Utilisateur** {user} **Raison** {reason} **Durée** {time} **ID** {id}"
 # Put "-NONE" to not have a ticket topic.
 # VARIABLES: 
 # {user} - User that created the ticket
@@ -276,12 +276,12 @@ Ticket_Topic: "**User** {user} **Reason** {reason} **Time** {time} **ID** {id}"
 
 Ticket_Embed_Title: "Ticket"
 # This is the title of the embed
-Ticket_Embed_Description: "{user}, thank you for creating a support ticket. "
+Ticket_Embed_Description: "{user}, merci d'avoir créé un ticket. "
 # This is the description or main field of the embed
 # VARIABLES:
 # {user} - This will print to the user that opened the ticket in the embed description
 # {reason} This will print the user's reason for opening the ticket.
-Ticket_Embed_Footer: "Ticket System"
+Ticket_Embed_Footer: "Système de ticket Veloria."
 # This is the footer of the embed. Put -NONE to not have an embed.
 Ticket_Embed_Timestamp: "true"
 # This will add the time the user joined at to the embed's footer if set to "true"
@@ -294,7 +294,7 @@ Ticket_Embed_Timestamp: "true"
 #                                  #
 ####################################
 
-Filter_System: "true"
+Filter_System: "false"
 # This will enable or disable the filter system.
 Filter_Bypass_Role: "Staff"
 # This is the rank required to bypass the filter system and say blacklisted words.

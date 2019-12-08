@@ -7,19 +7,21 @@ module.exports.run = async (bot, message, args) => {
     let embed = new Discord.RichEmbed()
         .setColor(config.color)
         .setThumbnail(bot.user.displayAvatarURL)
-        .addField("**COMMANDES VELORIABOT**", "**!ip** Connaitre l'ip du serveur Minecraft Veloria !\n**!new** Créer un nouveau ticket !");
+        .addField("**COMMANDES VELORIABOT**", "**!ip** Connaitre l'ip du serveur Minecraft Veloria !\n**!new** Créér un nouveau ticket !");
 
     let staffEmbed = new Discord.RichEmbed()
         .setColor(config.color)
         .setThumbnail(bot.user.displayAvatarURL)
         .addField("**COMMANDES ADMIN VELORIABOT**", "**-announce** Announce an important message to the server in an embed!\n**-ban** Ban users from the guild!\n**-blacklist** Blacklist users from talking or texting.\n**-clear** Clear a certain amount of messages!\n**-install** Install all needed Channels!\n**-mute** Mute a certain user!\n**-say** Create embeded messages!\n**-setprefix** Set the bot's command prefix!\n**-setstatus** Set the bots current status!\n**-update** Update the users about any changes happening.\n**-gcreate** create giveaways\n**-gdelete** delete giveaways\n**-greroll** reroll a finished giveaway")
 
-    let role = message.guild.roles.find("name", `${config.Staff_Help_Menu}`);
+    let role = message.guild.roles.find("name", `${config.Staff_Role_Name}`);
 
-    if (!role) console.log(`ERREUR! Le role ${config.Staff_Help_Menu} n'a pas été trouvé, merci de le créer.`);
+    if (!role) {
+        console.log(`ERREUR! Le role ${config.Staff_Role_Name} n'a pas été trouvé, merci de le créér.`);
+    }
     await message.channel.send(embed);
     if (message.member.roles.has(role.id)) {
-        message.channel.send(staffEmbed).then(message.channel.send(embed));
+        await message.channel.send(staffEmbed);
     }
 };
 
