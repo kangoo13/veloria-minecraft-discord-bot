@@ -1,0 +1,20 @@
+{
+  "name": "veloriabot",
+  "version": "1.0.0",
+  "description": "VeloriaBot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kangoo13",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^11.5.1",
+    "ms": "^2.1.2",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "sqlite3": "^4.0.6",
+    "unzip": "^0.1.11",
+    "yaml": "^1.6.0"
+  }
+}
