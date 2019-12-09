@@ -448,6 +448,8 @@ Reports_Channel: "reports"
 Announcement_Auto_Tag: "true"
 # This will auto tag @everyone in the announcements channel if set to true.
 
+Announcement_Embed_Title: "Titre Annonce"
+
 ### EMBED OPTIONS ###
 Announcement_Embed_Thumbnail: "https://images-ext-1.discordapp.net/external/veZptUu_KDKmwtUJX5QT3QxESYCaRp4_k0XUwEQxubo/https/i.imgur.com/e9DIB8e.png"
 # This is the image link that will be put at the top right corner of the embed. Put "-NONE" to not have a thumbnail in the embed.

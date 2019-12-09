@@ -35,7 +35,7 @@ module.exports.run = async (bot, message, args) => {
         .setAuthor(config.Announcement_Embed_Title)
         .setThumbnail(bot.user.displayAvatarURL)
         .setDescription(args.join(" "))
-        .setFooter(config.AnnounceEmbed_Footer);
+        .setFooter(config.Announce_Embed_Footer);
 
     return channel.send(all).then(channel.send(`@everyone`))
 };
