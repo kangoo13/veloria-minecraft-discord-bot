@@ -431,7 +431,7 @@ Updates_Channel: "updates"
 # This is the channel updates will be sent to.
 Vote_Channel: "polls"
 # This is the channel votes will be sent to.
-Announcement_Channel: "announcements"
+Announcement_Channel: "annonces"
 # This is the channel announcements will be sent to.
 Punishment_Logs_Channel: "logs"
 # This is the channel punishment logs will be sent to.
