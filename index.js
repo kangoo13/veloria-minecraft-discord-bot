@@ -37,7 +37,7 @@ function updateDiscordStatus() {
             const channelDiscordOnlineMembers = channels[guild.id].filter(chan => chan.type === "channel" && chan.name === "onlineMembersDiscord");
             if (channelDiscordTotalMembers.length > 0 && channelDiscordOnlineMembers.length > 0) {
                 guild.channels.get(channelDiscordTotalMembers[0].id).setName(`⭐ Membres: ${guild.memberCount}`).catch(console.error);
-                guild.channels.get(channelDiscordOnlineMembers[0].id).setName(`👥 En Ligne: ${guild.presences.size}`).catch(console.error);
+                guild.channels.get(channelDiscordOnlineMembers[0].id).setName(`👥 En Ligne: ${guild.memberCount-guild.presences.size}`).catch(console.error);
 
             }
             const channelMinecraftServerOnline = channels[guild.id].filter(chan => chan.type === "channel" && chan.name === "onlineMembersMinecraft");
